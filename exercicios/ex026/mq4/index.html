@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <menu>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -29,6 +31,14 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia similique molestias possimus, officiis rerum facere neque soluta blanditiis nisi odio dignissimos iste fugit. Reprehenderit, numquam? Iste, pariatur. Quos, ipsa asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis vero, eos optio sit voluptate dolorem iusto, quibusdam labore laborum aperiam ab facere quam architecto veniam laudantium placeat neque, voluptatem possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione aliquam at quis assumenda. Nostrum maxime quisquam ex, nam suscipit soluta explicabo animi. Ab cum sequi soluta dolore, incidunt omnis repudiandae! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus itaque facere optio incidunt deleniti minus eos asperiores totam nobis repudiandae debitis, esse officiis iure beatae nam? Modi aut eaque officiis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum neque quod nisi quam. Pariatur unde, dolore minus sit tempora accusamus repudiandae consequuntur nostrum doloribus expedita soluta nemo, accusantium ad molestias.</p>
         </article>
     </main>
-    
+    <script>
+        function clickMenu() {
+           if (itens.style.display == 'block') {
+            itens.style.display = 'none'
+           } else {
+            itens.style.display = 'block'
+           }
+        }
+    </script>
 </body>
 </html>
