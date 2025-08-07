@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container {
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row nowrap;
+            margin-bottom: 10px;
+        }
+
+        div.item {
+            background-color: lightskyblue;
+            text-align: center;
+            margin: 2px;
+            
+        }
+
+        div#cx1 {
+            flex-grow: 0;
+            flex-shrink: 0;
+        }
+
+        div#cx2 {
+            /*flex-grow: 2;
+            flex-shrink: 2;
+            flex-basis: 200px;*/
+
+            flex: 2 2 200px;
+        }
+
+        div#cx3 {
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+
+        div#cx4 {
+            flex-grow: 1;
+            flex-shrink: 4;
+        }
+
+        div#cx5 {
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+
+        div#cx6 {
+            flex-grow: 4;
+            flex-shrink: 0;
+        }
+
+        div#cx7 {
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+
+        div#cx8 {
+            flex-grow: 2;
+            flex-shrink: 2;
+        }
+
+        div#cx9 {
+            flex-grow: 4;
+            flex-shrink: 4;
+        }
+
+        div#cx10 {
+            flex-grow: 0;
+            flex-shrink: 0;
+        }
+
+        div#cx11 {
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+
+        div#cx12 {
+            flex-grow: 10;
+            flex-shrink: 10;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="cx1">A</div>
+        <div class="item" id="cx2">B</div>
+        <div class="item" id="cx3">C</div>
+    </div>
+    <div class="container">
+        <div class="item" id="cx4">A</div>
+        <div class="item" id="cx5">B</div>
+        <div class="item" id="cx6">C</div>
+    </div>
+    <div class="container">
+        <div class="item" id="cx7">A</div>
+        <div class="item" id="cx8">B</div>
+        <div class="item" id="cx9">C</div>
+    </div>
+    <div class="container">
+        <div class="item" id="cx10">A</div>
+        <div class="item" id="cx11">B</div>
+        <div class="item" id="cx12">C</div>
+    </div>
+</body>
+</html>
