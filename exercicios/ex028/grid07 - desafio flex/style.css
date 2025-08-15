@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    flex-flow: column nowrap;
+}
+
+.topo {
+    background-color: blue;
+    height: 80px;
+    text-align: center;
+    align-content: center;
+}
+
+.menu {
+    background-color: green;
+    height: 40px;
+    text-align: center;
+    align-content: center;
+}
+
+.conteudo-propaganda {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    flex: 1;
+}
+
+.principal {
+    background-color: purple;
+    flex: 1 1 600px;
+    text-align: center;
+    align-content: center;
+}
+
+.secundario {
+    background-color: pink;
+    flex: 0 0 200px;
+    text-align: center;
+    align-content: center;
+}
+
+.rodape {
+    background-color: orange;
+    height: 40px;
+    text-align: center;
+    align-content: center;
+}
